@@ -1,0 +1,150 @@
+
+/* General styles for the quote list page */
+.quote-list-page {
+    padding: 20px;
+    max-width: 800px;
+    margin: 0 auto;
+    font-family: Arial, sans-serif;
+  }
+  
+  /* Responsive container for quotes */
+  .quote-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  /* Individual quote cards */
+  .quote-card {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 15px;
+    background-color: #ffffff;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+  }
+  
+  .quote-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+  }
+  
+  .quote-card img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 10px;
+    object-fit: cover;
+  }
+  
+  /* Quote text styles */
+  .quote-text {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #333;
+  }
+  
+  /* Information section (author and date) */
+  .quote-info {
+    font-size: 14px;
+    color: #555;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  /* Load more button */
+  .load-more-btn {
+    display: block;
+    margin: 20px auto;
+    padding: 12px 25px;
+    font-size: 16px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-align: center;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+  }
+  
+  .load-more-btn:hover {
+    background-color: #0056b3;
+    transform: translateY(-3px);
+  }
+  
+  /* Floating action button for creating a new quote */
+  .floating-action-btn {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-color: #007bff;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 28px;
+    cursor: pointer;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s ease, transform 0.2s ease;
+  }
+  
+  .floating-action-btn:hover {
+    background-color: #0056b3;
+    transform: scale(1.1);
+  }
+  
+  /* Responsive styles */
+  @media (max-width: 768px) {
+    .quote-list-page {
+      padding: 15px;
+    }
+  
+    .quote-text {
+      font-size: 16px;
+    }
+  
+    .quote-info {
+      font-size: 13px;
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 5px;
+    }
+  
+    .load-more-btn {
+      font-size: 14px;
+      padding: 10px 20px;
+    }
+  
+    .floating-action-btn {
+      width: 50px;
+      height: 50px;
+      font-size: 24px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .quote-text {
+      font-size: 14px;
+    }
+  
+    .quote-info {
+      font-size: 12px;
+    }
+  
+    .load-more-btn {
+      font-size: 12px;
+      padding: 8px 15px;
+    }
+  
+    .floating-action-btn {
+      width: 45px;
+      height: 45px;
+      font-size: 20px;
+    }
+  }
+  
